@@ -10,24 +10,24 @@ $theme-map: ();
 
 $themes: (
   light: (
-    base-dark-purple: #6c3f7c,
-    base-purple: #6e5e9c,
-    base-purple-200: #cdb3d6,
-    base-pink: #eedfe4,
-    base-light-purple: #ead7ef,
-    header-text: #6c3f7c,
+    base-dark-purple: #3f6c7c,
+    base-purple: #5e799c,
+    base-purple-200: #b3c6d6,
+    base-pink: #d7e8ef,
+    base-light-purple: #dfeeed,
+    header-text: #3f6c7c,
     text: #020202,
-    svgs: #6e5e9c,
+    svgs: #5e799c,
   ),
   dark: (
-    base-dark-purple: #ddd6d6,
-    base-purple: #2a0f4e,
-    base-purple-200: #62416d,
-    base-pink: #8b4e62,
-    base-light-purple: #401d49,
-    header-text: #e6dede,
-    text: #e6dede,
-    svgs: #e6dede,
+    base-dark-purple: #d6e0dd,
+    base-purple: #0f2a4e,
+    base-purple-200: #416d8b,
+    base-pink: #4e728b,
+    base-light-purple: #1e3a5f,
+    header-text: #dedef6,
+    text: #dedef6,
+    svgs: #dedef6,
   ),
 );
 
@@ -696,7 +696,7 @@ ul {
   overflow: hidden;
   z-index: 999999;
   border: 8px solid vars.$base-purple;
-  background-color: #2a0f4e;
+  background-color: #1e3a5f;
   transform: perspective(1000px);
   border-radius: 48px;
 }
@@ -743,4 +743,17 @@ ul {
   @include media.media("<=tablet") {
     font-size: 28px;
   }
+}
+
+.github-link, .deploy-link {
+  color: inherit; /* Inherits text color from parent */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.github-link:hover, .deploy-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  opacity: 0.8; /* Slight fade effect */
 }

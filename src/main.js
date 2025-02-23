@@ -315,9 +315,9 @@ const desktopInstructions = document.querySelector(".desktop-instructions");
 const mobileInstructions = document.querySelector(".mobile-instructions");
 
 manager.onLoad = function () {
-  loadingScreenButton.style.border = "8px solid #2a0f4e";
-  loadingScreenButton.style.background = "#401d49";
-  loadingScreenButton.style.color = "#e6dede";
+  loadingScreenButton.style.border = "8px solid #0f2a4e"; // Dark blue
+  loadingScreenButton.style.background = "#5e799c"; // Teal blue
+  loadingScreenButton.style.color = "#dedef6"; // Light blue-gray
   loadingScreenButton.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
   loadingScreenButton.textContent = "Enter!";
   loadingScreenButton.style.cursor = "pointer";
@@ -329,14 +329,14 @@ manager.onLoad = function () {
     if (isDisabled) return;
 
     loadingScreenButton.style.cursor = "default";
-    loadingScreenButton.style.border = "8px solid #6e5e9c";
-    loadingScreenButton.style.background = "#ead7ef";
-    loadingScreenButton.style.color = "#6e5e9c";
+    loadingScreenButton.style.border = "8px solid #5e799c"; // Medium blue
+    loadingScreenButton.style.background = "#d7e8ef"; // Light blue
+    loadingScreenButton.style.color = "#5e799c"; // Medium blue
     loadingScreenButton.style.boxShadow = "none";
-    loadingScreenButton.textContent = "~ 안녕하세요 ~";
-    loadingScreen.style.background = "#ead7ef";
-    // desktopInstructions.style.color = "#6e5e9c";
-    // mobileInstructions.style.color = "#6e5e9c";
+    loadingScreenButton.textContent = "~ 你好 \(@^0^@)/ ~";
+    loadingScreen.style.background = "#d7e8ef"; // Light blue
+    // desktopInstructions.style.color = "#5e799c";
+    // mobileInstructions.style.color = "#5e799c";
     isDisabled = true;
 
     toggleFavicons();
@@ -1422,7 +1422,7 @@ let currentIntersects = [];
 let currentHoveredObject = null;
 
 const socialLinks = {
-  GitHub: "https://github.com/andrewwoan/sooahkimsfolio",
+  GitHub: "https://github.com/Richman-Tan",
   YouTube: "https://youtu.be/AB6sulUMRGE",
   Twitter: "https://www.twitter.com/",
 };
