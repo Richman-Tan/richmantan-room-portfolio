@@ -1423,7 +1423,7 @@ let currentHoveredObject = null;
 
 const socialLinks = {
   GitHub: "https://github.com/Richman-Tan",
-  YouTube: "https://youtu.be/AB6sulUMRGE",
+  YouTube: "",
   Twitter: "https://www.twitter.com/",
 };
 
